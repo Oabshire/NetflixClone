@@ -17,6 +17,8 @@
 		096DB26A294420CC000A8B84 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096DB269294420CC000A8B84 /* SearchViewController.swift */; };
 		096DB26C294420EB000A8B84 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096DB26B294420EB000A8B84 /* DownloadsViewController.swift */; };
 		096DB2732947C93D000A8B84 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096DB2722947C93D000A8B84 /* CollectionViewTableViewCell.swift */; };
+		096DB2762947E0BD000A8B84 /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096DB2752947E0BD000A8B84 /* HeroHeaderUIView.swift */; };
+		096DB2782947F4E9000A8B84 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096DB2772947F4E9000A8B84 /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		096DB269294420CC000A8B84 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		096DB26B294420EB000A8B84 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
 		096DB2722947C93D000A8B84 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		096DB2752947E0BD000A8B84 /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
+		096DB2772947F4E9000A8B84 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		096DB25029441DF8000A8B84 /* NetflixClone */ = {
 			isa = PBXGroup;
 			children = (
+				096DB2772947F4E9000A8B84 /* UIImage+Extension.swift */,
 				096DB25129441DF8000A8B84 /* AppDelegate.swift */,
 				096DB25329441DF8000A8B84 /* SceneDelegate.swift */,
 				096DB25529441DF8000A8B84 /* MainTabBarViewController.swift */,
@@ -91,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				096DB2722947C93D000A8B84 /* CollectionViewTableViewCell.swift */,
+				096DB2752947E0BD000A8B84 /* HeroHeaderUIView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,9 +197,11 @@
 				096DB26A294420CC000A8B84 /* SearchViewController.swift in Sources */,
 				096DB25629441DF8000A8B84 /* MainTabBarViewController.swift in Sources */,
 				096DB2732947C93D000A8B84 /* CollectionViewTableViewCell.swift in Sources */,
+				096DB2762947E0BD000A8B84 /* HeroHeaderUIView.swift in Sources */,
 				096DB26C294420EB000A8B84 /* DownloadsViewController.swift in Sources */,
 				096DB25229441DF8000A8B84 /* AppDelegate.swift in Sources */,
 				096DB25429441DF8000A8B84 /* SceneDelegate.swift in Sources */,
+				096DB2782947F4E9000A8B84 /* UIImage+Extension.swift in Sources */,
 				096DB268294420A9000A8B84 /* UpcomingViewController.swift in Sources */,
 				096DB26629442073000A8B84 /* HomeViewController.swift in Sources */,
 			);
