@@ -16,6 +16,7 @@
 		096DB268294420A9000A8B84 /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096DB267294420A9000A8B84 /* UpcomingViewController.swift */; };
 		096DB26A294420CC000A8B84 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096DB269294420CC000A8B84 /* SearchViewController.swift */; };
 		096DB26C294420EB000A8B84 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096DB26B294420EB000A8B84 /* DownloadsViewController.swift */; };
+		096DB2732947C93D000A8B84 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096DB2722947C93D000A8B84 /* CollectionViewTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		096DB267294420A9000A8B84 /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		096DB269294420CC000A8B84 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		096DB26B294420EB000A8B84 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
+		096DB2722947C93D000A8B84 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				096DB25129441DF8000A8B84 /* AppDelegate.swift */,
 				096DB25329441DF8000A8B84 /* SceneDelegate.swift */,
 				096DB25529441DF8000A8B84 /* MainTabBarViewController.swift */,
+				096DB2742947C95C000A8B84 /* View */,
 				096DB26D2944264C000A8B84 /* Controllers */,
 				096DB25F29441DFA000A8B84 /* Info.plist */,
 				096DB25A29441DFA000A8B84 /* Assets.xcassets */,
@@ -82,6 +85,14 @@
 				096DB26B294420EB000A8B84 /* DownloadsViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		096DB2742947C95C000A8B84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				096DB2722947C93D000A8B84 /* CollectionViewTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +190,7 @@
 			files = (
 				096DB26A294420CC000A8B84 /* SearchViewController.swift in Sources */,
 				096DB25629441DF8000A8B84 /* MainTabBarViewController.swift in Sources */,
+				096DB2732947C93D000A8B84 /* CollectionViewTableViewCell.swift in Sources */,
 				096DB26C294420EB000A8B84 /* DownloadsViewController.swift in Sources */,
 				096DB25229441DF8000A8B84 /* AppDelegate.swift in Sources */,
 				096DB25429441DF8000A8B84 /* SceneDelegate.swift in Sources */,
