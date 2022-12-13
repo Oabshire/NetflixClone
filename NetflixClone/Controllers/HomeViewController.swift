@@ -8,6 +8,9 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+
+	let sectionTitles: [String] = ["Trending Movies", "Popular", "Trending  TV", "Upcoming  Movies", "Top Rated"]
+
 	private let homeFeedTable: UITableView = {
 		let table = UITableView(frame: .zero, style: .grouped)
 		table.register(CollectionViewTableViewCell.self, forCellReuseIdentifier: "CollectionViewTableViewCell")
@@ -35,7 +38,7 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 	func numberOfSections(in tableView: UITableView) -> Int {
-		return 20
+		sectionTitles.count
 	}
 
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -53,11 +56,25 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 	}
 
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-		return 200
+		200
+	}
+
+	func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+		sectionTitles[section]
+	}
+
+	func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+		guard let header = view as? UITableViewHeaderFooterView else { return }
+		header.textLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
+		header.textLabel?.frame = CGRect(x:header.bounds.origin.x + 20,
+																		 y: header.bounds.origin.y,
+																		 width: 100,
+																		 height: header.bounds.height )
+		header.textLabel?.textColor = .white
 	}
 
 	private func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> Int {
-		return 40
+		40
 	}
 }
 
@@ -70,7 +87,7 @@ private extension HomeViewController {
 		navigationItem.rightBarButtonItems = [
 			UIBarButtonItem(image: UIImage(systemName: "person"), style: .done, target: self, action: nil),
 			UIBarButtonItem(image: UIImage(systemName: "play.rectangle"), style: .done, target: self, action: nil)
-			]
+		]
 
 		navigationController?.navigationBar.tintColor = .white
 	}
