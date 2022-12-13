@@ -22,7 +22,9 @@ class HomeViewController: UIViewController {
 		homeFeedTable.delegate = self
 		homeFeedTable.dataSource = self
 
-		homeFeedTable.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
+		configureNavBar()
+
+		homeFeedTable.tableHeaderView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
 	}
 
 	override func viewDidLayoutSubviews() {
@@ -56,5 +58,20 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
 	private func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> Int {
 		return 40
+	}
+}
+
+private extension HomeViewController {
+	func configureNavBar() {
+		var image = UIImage(named: "netflixLogo")
+		image = image?.withRenderingMode(.alwaysOriginal).resizeTo(size: CGSize(width: 50, height: 75))
+		navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .done, target: self, action: nil)
+
+		navigationItem.rightBarButtonItems = [
+			UIBarButtonItem(image: UIImage(systemName: "person"), style: .done, target: self, action: nil),
+			UIBarButtonItem(image: UIImage(systemName: "play.rectangle"), style: .done, target: self, action: nil)
+			]
+
+		navigationController?.navigationBar.tintColor = .white
 	}
 }
